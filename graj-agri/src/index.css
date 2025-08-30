@@ -1,1 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-averia-gruesa: "Averia Gruesa Libre", system-ui, sans-serif;
+}
+
