@@ -1,7 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-averia-gruesa: "Averia Gruesa Libre", system-ui, sans-serif;
+  --font-birthstone: "Birthstone", cursive;
+
+  --color-heading: #42494d;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
