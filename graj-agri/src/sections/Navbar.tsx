@@ -24,7 +24,7 @@ export default function Navbar() {
       {/* Top Strip Line */}
       <div className="w-full h-10 bg-[#6d9732]"></div>
 
-      <nav className="flex justify-between items-center p-4 md:px-10 bg-white shadow-sm sticky top-0 z-50">
+      <nav className="flex justify-between items-center p-2 md:px-10 bg-white shadow-sm sticky top-0 z-40">
         {/* Logo */}
         <img src={logo} width={50} height={50} alt="logo" />
 
