@@ -3,6 +3,7 @@ import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Products from "./sections/Products";
+import Gallery from "./sections/Gallery";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Hero />
         <About />
         <Products />
+        <Gallery />
       </main>
     </>
   );
