@@ -52,7 +52,7 @@ export default function Gallery() {
 
   return (
     <div id="gallery" className="w-full max-w-7xl mx-auto px-4 py-8">
-      <h2 className="font-averia-gruesa text-4xl md:text-5xl text-gray-800 text-center mb-12 text-heading">
+      <h2 className="font-averia-gruesa text-4xl md:text-5xl text-center mb-12 text-heading">
         Gallery
       </h2>
 
@@ -96,7 +96,7 @@ export default function Gallery() {
         </div>
 
         {/* Navigation controls */}
-        <div className="flex items-center justify-center mt-8 space-x-8">
+        <div className="flex items-center justify-center my-8 space-x-8">
           <NavigationButton onClick={prevSlide} variant="text">
             <ChevronLeft className="w-5 h-5 group-hover:scale-110 transition-transform" />
             <span className="font-medium text-sm md:text-base">PREVIOUS</span>
