@@ -3,21 +3,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 
 import Logo from "../assets/logo.png"
 import DotIndicator from "../components/DotIndicator";
-
-const testimonials = [
-  {
-    name: "Jan Navales",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-  },
-  {
-    name: "Emily Carter",
-    text: "The service and support have been amazing! The team really cares about customers and goes the extra mile.",
-  },
-  {
-    name: "Rahul Mehta",
-    text: "Superb experience overall. The quality, attention to detail, and customer-first approach are something rare.",
-  },
-];
+import testimonials from "../data/testimonials.json"
 
 export default function Testimonials() {
   const [current, setCurrent] = useState(0);
