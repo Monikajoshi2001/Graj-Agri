@@ -1,9 +1,5 @@
 import "./App.css";
-import Navbar from "./sections/Navbar";
-import Hero from "./sections/Hero";
-import About from "./sections/About";
-import Products from "./sections/Products";
-import Gallery from "./sections/Gallery";
+import { Navbar, Hero, About, Products, Gallery, Services } from "./sections";
 
 function App() {
   return (
@@ -14,6 +10,7 @@ function App() {
         <About />
         <Products />
         <Gallery />
+        <Services />
       </main>
     </>
   );
