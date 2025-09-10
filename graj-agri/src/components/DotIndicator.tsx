@@ -6,7 +6,7 @@ interface DotIndicatorProps {
 
 export default function DotIndicator({ total, currentIndex, onDotClick }: DotIndicatorProps) {
   return (
-    <div className="flex justify-center mt-6 space-x-2">
+    <div className="flex justify-center space-x-2">
       {Array.from({ length: total }, (_, index) => (
         <button
           key={index}
