@@ -5,7 +5,8 @@ import Products from "./Products";
 import Gallery from "./Gallery";
 import Services from "./Services";
 import Testimonials from "./Testimonial";
+import ContactForm from "./ContactForm";
 
-export { Navbar, Hero, About, Products, Gallery, Services, Testimonials };
+export { Navbar, Hero, About, Products, Gallery, Services, Testimonials, ContactForm };
 
 
