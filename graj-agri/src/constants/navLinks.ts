@@ -20,7 +20,7 @@ export const navlinks = [
     href: "#gallery",
   },
   {
-    label: "Contact",
-    href: "#contact",
+    label: "Testimonials",
+    href: "#testimonials",
   },
 ]

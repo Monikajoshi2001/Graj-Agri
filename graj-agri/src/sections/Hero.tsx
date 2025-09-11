@@ -11,7 +11,7 @@ export default function Hero() {
         </div>
 
         {/* Right Side */}
-        <div className="bg-[#e3fede] p-3 md:p-15 flex flex-col gap-10 items-start md:w-1/2">
+        <div className="bg-[#e3fede] p-5 md:p-15 flex flex-col gap-10 items-start md:w-1/2">
           <h1 className="text-5xl font-bold text-heading font-averia-gruesa">
             Apana Kisan
           </h1>
