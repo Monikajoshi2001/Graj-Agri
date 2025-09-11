@@ -2,6 +2,7 @@ import { useState, useId } from "react";
 import { User, Mail, Phone } from "lucide-react";
 import Button from "../components/Button";
 import InputField from "../components/InputField";
+import config from "../constants/config";
 
 export default function ContactForm() {
   const [form, setForm] = useState({
@@ -48,11 +49,10 @@ export default function ContactForm() {
       return;
     }
 
-    const toEmail = "heaven@earth.com"; // default "To" email
     const subject = encodeURIComponent("Inquiry from Contact Form");
     const body = generateBody();
 
-    window.location.href = `mailto:${toEmail}?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${config.TO_EMAIL}?subject=${subject}&body=${body}`;
   };
 
 
