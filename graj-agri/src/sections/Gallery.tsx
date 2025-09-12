@@ -52,7 +52,7 @@ export default function Gallery() {
 
   return (
     <div id="gallery" className="w-full max-w-7xl mx-auto px-4 py-8">
-      <h2 className="font-averia-gruesa text-4xl md:text-5xl text-center mb-12 text-heading">
+      <h2 className="font-averia-gruesa text-5xl text-center mb-12 text-heading">
         Gallery
       </h2>
 

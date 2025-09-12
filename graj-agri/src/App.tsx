@@ -1,5 +1,5 @@
 import "./App.css";
-import { Navbar, Hero, About, Products, Gallery, Services, Testimonials, ContactForm } from "./sections";
+import { Navbar, Hero, About, Products, Gallery, Services, Testimonials, ContactForm, ContactLocation } from "./sections";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
         <Services />
         <Testimonials />
         <ContactForm />
+        <ContactLocation />
       </main>
     </>
   );

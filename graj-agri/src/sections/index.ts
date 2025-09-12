@@ -6,7 +6,8 @@ import Gallery from "./Gallery";
 import Services from "./Services";
 import Testimonials from "./Testimonial";
 import ContactForm from "./ContactForm";
+import ContactLocation from "./ContactLocation";
 
-export { Navbar, Hero, About, Products, Gallery, Services, Testimonials, ContactForm };
+export { Navbar, Hero, About, Products, Gallery, Services, Testimonials, ContactForm, ContactLocation };
 
 

@@ -44,7 +44,7 @@ export default function Navbar() {
 
         {/* Right side - Button + Mobile Menu */}
         <div className="flex items-center gap-3">
-          <Button>Queries?</Button>
+          <a href="#contact"><Button>Queries?</Button></a>
 
           {/* Mobile Menu Button */}
           <button
@@ -96,6 +96,7 @@ export default function Navbar() {
           </ul>
 
           <Button className="w-full">Queries?</Button>
+          <a href="#contact" ><Button className="w-full">Queries?</Button></a>
         </div>
       </div>
     </>

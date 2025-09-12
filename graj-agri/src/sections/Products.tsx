@@ -24,7 +24,7 @@ export default function Products() {
     <section id="products" className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center mb-16">
-          <h2 className="font-averia-gruesa text-3xl sm:text-4xl lg:text-5xl text-center text-heading mb-6">
+          <h2 className="font-averia-gruesa text-5xl text-center text-heading mb-6">
             Our Products
           </h2>
           <p className="text-center max-w-4xl text-gray-600 text-base sm:text-lg leading-relaxed">
