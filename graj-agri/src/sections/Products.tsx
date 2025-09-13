@@ -28,9 +28,7 @@ export default function Products() {
             Our Products
           </h2>
           <p className="text-center max-w-4xl text-gray-600 text-base sm:text-lg leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            repellendus beatae obcaecati nam quos sapiente modi natus accusamus!
-            Atque, doloribus.
+            From herbicides to fertilizers, insecticides, and fungicides, we deliver trusted products to help farmers grow better every season.
           </p>
         </div>
 

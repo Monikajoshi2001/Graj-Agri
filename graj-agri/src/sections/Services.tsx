@@ -21,9 +21,8 @@ export default function Services() {
               Our Services
             </h1>
             <p className="text-center max-w-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              laudantium quod illum velit quidem quia explicabo ut aliquid
-              facilis veniam.
+              Our services are designed to ensure trusted quality, 
+              eco-friendly practices, and better farming outcomes.
             </p>
           </div>
 
