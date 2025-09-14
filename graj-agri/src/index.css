@@ -1,3 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-averia-gruesa: "Averia Gruesa Libre", system-ui, sans-serif;
+  --font-birthstone: "Birthstone", cursive;
+
+  --color-heading: #42494d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-text-fill-color: #fff !important;
+  background: transparent !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
