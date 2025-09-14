@@ -35,19 +35,19 @@ export default function About() {
           </h2>
           <h2 className="text-heading font-birthstone text-7xl">Apna Kisaan</h2>
           <p>
-            At Apna Kisaan, we are dedicated to building a future where farming
-            is sustainable, profitable, and accessible for every farmer. With a
-            strong focus on innovation and quality, we provide a wide range of
-            agricultural products including herbicides, fertilizers,
-            insecticides, and fungicides that are designed to protect crops and
-            enrich soil health. Our mission is to empower farmers with the tools
-            and knowledge they need to improve productivity and ensure food
-            security for generations to come. We believe in working hand-in-hand
-            with the farming community, offering not only products but also
-            guidance and support that add real value to their fields. By
-            combining science, technology, and farmer-first values, Apna Kisaan
-            continues to grow as a trusted partner in agriculture, driving
-            positive change in rural communities.
+            GRAJ PRODUS PVT. LTD. Established in 2019 and Director Sh. Govind
+            Singh have a experience of 10 year of the fertilizer industry and
+            also had a farming experience. It is a diversified, research &
+            development based complete Agriculture Inputs and Crop Protection
+            Company specializing in pre harvest plant protection products. It
+            helps farmers shift from traditional agriculture practices towards
+            modern and scientific approach by innovating products which includes
+            generic agrochemicals, plant nutrients, organic manures etc. The
+            company is committed to prosperous farming by creating perfect
+            harmony between nature and science. Company's endeavor is to boost
+            crop productivity in the country with a focus on increasing crop
+            output and preventing pre-harvest wastage with the help of an
+            innovative and constantly evolving product portfolio.
           </p>
           <Button>Learn More</Button>
         </div>
