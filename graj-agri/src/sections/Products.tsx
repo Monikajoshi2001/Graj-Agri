@@ -1,24 +1,23 @@
 import ProductCard from "../components/ProductCard";
-import product_img_1 from "../assets/product-1.png"
-import product_img_2 from "../assets/product-2.png"
-import product_img_3 from "../assets/product-3.png"
+import product_img_1 from "../assets/products/product-1.png";
+import product_img_2 from "../assets/products/product-2.png";
+import product_img_3 from "../assets/products/product-3.png";
 
 export default function Products() {
-  
   const products = [
     {
       productName: "Organic Fertilizer",
-      productImage: product_img_1
+      productImage: product_img_1,
     },
     {
       productName: "Insecticides",
-      productImage: product_img_2
+      productImage: product_img_2,
     },
     {
       productName: "Fungicides",
-      productImage: product_img_3
-    }
-  ]
+      productImage: product_img_3,
+    },
+  ];
 
   return (
     <section id="products" className="py-16 px-4 sm:px-6 lg:px-8">
@@ -28,7 +27,8 @@ export default function Products() {
             Our Products
           </h2>
           <p className="text-center max-w-4xl text-gray-600 text-base sm:text-lg leading-relaxed">
-            From herbicides to fertilizers, insecticides, and fungicides, we deliver trusted products to help farmers grow better every season.
+            From herbicides to fertilizers, insecticides, and fungicides, we
+            deliver trusted products to help farmers grow better every season.
           </p>
         </div>
 

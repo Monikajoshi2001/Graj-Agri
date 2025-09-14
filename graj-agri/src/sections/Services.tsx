@@ -1,7 +1,7 @@
-import service1 from "../assets/service1.png";
-import service2 from "../assets/service2.png";
-import service3 from "../assets/service3.png";
-import service4 from "../assets/service4.png";
+import service1 from "../assets/icons/service1.png";
+import service2 from "../assets/icons/service2.png";
+import service3 from "../assets/icons/service3.png";
+import service4 from "../assets/icons/service4.png";
 import ServiceCard from "../components/ServiceCard";
 
 export default function Services() {
@@ -13,7 +13,10 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className={`mt-10 p-3 lg:h-screen lg:bg-cover bg-[url(/services_bg.png)]`}>
+    <section
+      id="services"
+      className={`mt-10 p-3 lg:h-screen lg:bg-cover bg-[url(/services_bg.png)]`}
+    >
       <div className="lg:w-2/3 lg:h-full lg:flex lg:justify-center lg:items-center">
         <div className="flex flex-col items-center">
           <div className="mb-10 flex flex-col items-center justify-center">
@@ -21,8 +24,8 @@ export default function Services() {
               Our Services
             </h1>
             <p className="text-center max-w-xl">
-              Our services are designed to ensure trusted quality, 
-              eco-friendly practices, and better farming outcomes.
+              Our services are designed to ensure trusted quality, eco-friendly
+              practices, and better farming outcomes.
             </p>
           </div>
 
@@ -40,4 +43,3 @@ export default function Services() {
     </section>
   );
 }
-

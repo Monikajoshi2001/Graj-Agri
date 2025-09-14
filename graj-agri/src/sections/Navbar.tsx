@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/icons/logo.png";
 import { navlinks } from "../constants/navLinks";
 import { Menu, X } from "lucide-react";
 import Button from "../components/Button";
@@ -44,7 +44,9 @@ export default function Navbar() {
 
         {/* Right side - Button + Mobile Menu */}
         <div className="flex items-center gap-3">
-          <a href="#contact"><Button>Queries?</Button></a>
+          <a href="#contact">
+            <Button>Queries?</Button>
+          </a>
 
           {/* Mobile Menu Button */}
           <button
@@ -96,7 +98,9 @@ export default function Navbar() {
           </ul>
 
           <Button className="w-full">Queries?</Button>
-          <a href="#contact" ><Button className="w-full">Queries?</Button></a>
+          <a href="#contact">
+            <Button className="w-full">Queries?</Button>
+          </a>
         </div>
       </div>
     </>
