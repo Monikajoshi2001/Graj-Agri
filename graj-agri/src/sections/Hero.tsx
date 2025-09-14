@@ -1,4 +1,4 @@
-import heroImage from "../assets/hero_img.png";
+import heroImage from "../assets/icons/hero_img.png";
 import Button from "../components/Button";
 
 export default function Hero() {
@@ -16,14 +16,17 @@ export default function Hero() {
             Apana Kisan
           </h1>
           <p className="font-[poppins]">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente a
-            rerum non esse, in fuga. Culpa dignissimos nobis impedit dolorum,
-            ducimus laborum repellat assumenda natus quas perspiciatis
-            laudantium tenetur cumque qui a mollitia numquam excepturi, dolores
-            repellendus eius ex obcaecati provident voluptates eum ipsum?
-            Voluptates, deserunt! Temporibus ratione doloribus totam, neque vel
-            placeat repudiandae dicta sint odio, consectetur doloremque quos
-            officiis vitae repellat laborum dolores{" "}
+            Empowering farmers with reliable and innovative agricultural
+            solutions that enhance crop health, improve soil fertility, and
+            deliver sustainable yields for a better tomorrow. At Apna Kisaan, we
+            believe farming is not just a profession but a way of life, and we
+            are committed to supporting farmers with products they can trust
+            season after season. With a wide range of fertilizers, herbicides,
+            insecticides, and fungicides, our goal is to make modern farming
+            accessible, productive, and eco-friendly. By combining science,
+            technology, and farmer-first values, we strive to create
+            long-lasting growth, prosperity, and a greener future for the
+            agricultural community.{" "}
           </p>
           <Button>Learn More</Button>
         </div>

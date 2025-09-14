@@ -1,32 +1,39 @@
-import { useState, useRef } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import NavigationButton from '../components/NavigationButton';
-import GalleryItem from '../components/GalleryItem';
-import DotIndicator from '../components/DotIndicator';
+import { useState, useRef } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import NavigationButton from "../components/NavigationButton";
+import GalleryItem from "../components/GalleryItem";
+import DotIndicator from "../components/DotIndicator";
 
 export default function Gallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
+  const importedImages = import.meta.glob(
+    "../assets/gallery/*.{png,jpg,jpeg,svg}",
+    {
+      eager: true,
+    }
+  );
+  const galleryImages = Object.values(importedImages).map(
+    (mod) => (mod as { default: string }).default
+  );
 
-  const galleryItems = [
-    { id: 1, src: '', alt: 'Plant Collection', color: 'bg-blue-100' },
-    { id: 2, src: '', alt: 'Ocean Breeze', color: 'bg-green-100' },
-    { id: 3, src: '', alt: 'Mountain Vista', color: 'bg-purple-100' },
-    { id: 4, src: '', alt: 'Golden Hour', color: 'bg-yellow-100' },
-    { id: 5, src: '', alt: 'Flower Garden', color: 'bg-pink-100' },
-    { id: 6, src: '', alt: 'Starry Night', color: 'bg-indigo-100' },
-    { id: 7, src: '', alt: 'Forest Path', color: 'bg-emerald-100' },
-    { id: 8, src: '', alt: 'Desert Sunset', color: 'bg-orange-100' },
-  ];
+  const galleryItems = galleryImages.map((src, index) => ({
+    id: index + 1,
+    src,
+    alt: `Gallery Image ${index + 1}`,
+    color: "bg-green-100",
+  }));
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % galleryItems.length);
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + galleryItems.length) % galleryItems.length);
+    setCurrentIndex(
+      (prev) => (prev - 1 + galleryItems.length) % galleryItems.length
+    );
   };
 
   // Touch handlers for mobile swipe
@@ -57,7 +64,6 @@ export default function Gallery() {
       </h2>
 
       <div className="relative">
-
         {/* Gallery slider container */}
         <div
           ref={containerRef}
@@ -66,7 +72,6 @@ export default function Gallery() {
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
         >
-
           {/* Sliding container */}
           <div
             className="flex h-full transition-transform duration-500 ease-out"
@@ -86,11 +91,19 @@ export default function Gallery() {
           </div>
 
           {/* Navigation arrows */}
-          <NavigationButton onClick={prevSlide} className="left-4" variant="arrow">
+          <NavigationButton
+            onClick={prevSlide}
+            className="left-4"
+            variant="arrow"
+          >
             <ChevronLeft className="w-6 h-6 text-gray-700 group-hover:text-gray-900" />
           </NavigationButton>
 
-          <NavigationButton onClick={nextSlide} className="right-4" variant="arrow">
+          <NavigationButton
+            onClick={nextSlide}
+            className="right-4"
+            variant="arrow"
+          >
             <ChevronRight className="w-6 h-6 text-gray-700 group-hover:text-gray-900" />
           </NavigationButton>
         </div>
@@ -116,9 +129,7 @@ export default function Gallery() {
           currentIndex={currentIndex}
           onDotClick={setCurrentIndex}
         />
-
       </div>
     </div>
   );
-};
-
+}
